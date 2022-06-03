@@ -90,9 +90,9 @@ namespace Quinones_TicTactoe_BSCOE_1_4
             else if ((Q3.Text == L3.Text) && (L3.Text == G3.Text) && (!Q3.Enabled))
                 we_have_a_chaampion = true;
             //diagonal checks
-            if ((Q1.Text == L2.Text) && (L2.Text == G3.Text) && (!Q1.Enabled))
+            else if ((Q1.Text == L2.Text) && (L2.Text == G3.Text) && (!Q1.Enabled))
                 we_have_a_chaampion = true;
-            if ((G3.Text == L2.Text) && (L2.Text == Q1.Text) && (!G1.Enabled))
+            else if ((Q3.Text == L2.Text) && (L2.Text == G1.Text) && (!Q2.Enabled))
                 we_have_a_chaampion = true;
             if (we_have_a_chaampion)
             {
