@@ -83,7 +83,7 @@ namespace Quinones_TicTactoe_BSCOE_1_4
             else if ((G1.Text == G2.Text) && (G2.Text == G3.Text) && (!G1.Enabled))
                 we_have_a_chaampion = true;
             //vertical checks
-            if ((Q1.Text == L1.Text) && (L1.Text == G1.Text) && (!Q1.Enabled))
+            else if ((Q1.Text == L1.Text) && (L1.Text == G1.Text) && (!Q1.Enabled))
                 we_have_a_chaampion = true;
             else if ((Q2.Text == L2.Text) && (L2.Text == G2.Text) && (!Q2.Enabled))
                 we_have_a_chaampion = true;
@@ -92,7 +92,7 @@ namespace Quinones_TicTactoe_BSCOE_1_4
             //diagonal checks
             else if ((Q1.Text == L2.Text) && (L2.Text == G3.Text) && (!Q1.Enabled))
                 we_have_a_chaampion = true;
-            else if ((Q3.Text == L2.Text) && (L2.Text == G1.Text) && (!Q2.Enabled))
+            else if ((Q3.Text == L2.Text) && (L2.Text == G1.Text) && (!G1.Enabled))
                 we_have_a_chaampion = true;
             if (we_have_a_chaampion)
             {
